@@ -69,9 +69,12 @@
       ], { duration: 400 });
       return;
     }
-
-    const message = `Hello JES, my name is ${name}. I would like to purchase a ${service} scratch card.`;
+if (service == "Other") {
+  const message = "Hello JES, my name is ${name}. I would like to purchase a/an "
+}
+    const message = `Hello JES, my name is ${name}. I would like to purchase a ${service}.`;
     const encodedMessage = encodeURIComponent(message);
+    
     const whatsappURL = `https://wa.me/2349068992442?text=${encodedMessage}`;
 
     // Visual feedback
