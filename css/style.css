@@ -228,7 +228,7 @@
     margin-bottom: 20px;
     color: var(--navy);
   }
-  .hero h1 .gradient {
+  .gradient {
     background: linear-gradient(135deg, var(--gold) 0%, var(--orange) 100%);
     -webkit-background-clip: text;
     background-clip: text;
